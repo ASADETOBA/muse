@@ -6,3 +6,61 @@ html, body, .wrapper{
 	width: 100%;
 	background:  #f0eae9;
 }
+/*========================
+Header styling starts here
+========================*/
+nav{
+	margin: auto;
+	width: 80%;
+	background: #FFF;
+}
+
+nav .row{
+	margin-right: 0;
+	margin-left: 0;
+}
+#Login{
+	background: #FFF;
+}
+#Login a{
+	color: #007ee5;
+}
+
+#SignUp{
+	background: #007ee5;
+}
+#SignUp a{
+	color: #FFF;
+}
+/*========================
+Header styling ends here
+========================*/
+
+/*========================
+Main styling starts here
+========================*/
+#content{
+	margin: auto;
+	width: 80%;
+	height: calc(100% - 56px);
+}
+
+#content .row{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#content .col-md-3{
+	padding: 0;
+}
+
+.LeftSidebar{
+	background: #969195;
+}
+
+#homepage p{
+	color:  #faf7f6 ;
+}
+/*========================
+Main styling ends here
+========================*/
