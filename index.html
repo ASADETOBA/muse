@@ -5,7 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>MUSE PROJECT</title>
-
+		
+		<!-- Font Awesome -->
+     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 		<!-- style CSS -->
@@ -16,79 +18,281 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<nav>
-					<div class="row">
-						<div class="col-md-3">
-							<div>
-								<h3>KARAOKEPARTY</h3>
-							</div>
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">							
+							<a class="navbar-brand" href="#">KARAOKE<span style="color:#22C2FE;">PARTY</span></a>
 						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="What do you want to sing?">
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div>
-								<ul class="nav nav-pills">
-									<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">country <span class="caret"></span></a>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<i class="fa fa-search"></i>							
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="What do you want sing?">
+								</div>
+							</form>
+							<ul class="nav navbar-nav navbar-right">							
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li>Flag1</li>
-										<li>Flag2</li>
-										<li>Flag3</li>	
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li><a href="#">Separated link</a></li>
 									</ul>
-									</li>
-									<li id="Login"><a href="#">Login</a></li>
-									<li id="SignUp"><a href="#">Sign Up</a></li>
-								</ul>
-							</div>
-						</div>
+								</li>
+								<li id="Login"><a href="#">Login</a></li>
+								<li id="SignUp"><a href="#">Sign Up</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
 					</div>
 				</nav>
 			</header>
 			
 			<main>
-				<section id="content">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="LeftSidebar">
-								<ul class="nav nav-pills nav-stacked">
-									<li id="homepage"><a href="#"><i class="fa fa-user"></i><p>HOMEPAGE</p></a></li>
-									<li id="songs"><a href="#">SONGS</a></li>
-									<li id="battles"><a href="#">BATTLES</a></li>
-									<li id="partymode"><a href="#">PARTYMODE</a></li>
-									<li id="quiz"><a href="#">QUIZ</a></li>
-									<li id="school"><a href="#">SCHOOL</a></li>
-									<li id="forums"><a href="#">FORUMS</a></li>
-									<li id="help"><a href="#">HELP</a></li>
-								</ul>
-							</div>							
-						</div>
+				<aside id="LeftSidebar">
+					<ul>
+						<li><a href="#">
+									<i class="fa fa-home bg-orange"></i>
+									<p id="homepage">HOMEPAGE</p>
+								</a>
+						</li>
 
-						<div class="col-md-9">
-							<div class="RightSidebar">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="upper">
-											<p>upper</p>
-										</div>
-									</div>
-								</div>
+						<li><a href="#">
+									<i class="fa fa-microphone"></i>
+									<p>SONGS</p>
+								</a>
+						</li>
 
-								<div class="row">
-									<div class="col-md-12">
-										<div class="lower">
-											<p>lower</p>
-										</div>
-									</div>
-								</div>
-							</div>														
+						<li><a href="#">
+									<i class="fa fa-birthday-cake"></i>
+									<p>PARTYMODE</p>
+								</a>
+						</li>
+
+						<li><a href="#">
+									<i class="fa fa-book"></i>
+									<p>QUIZ</p>
+								</a>
+						</li>
+
+						<li><a href="#">
+									<i class="fa fa-graduation-cap"></i>
+									<p>SCHOOL</p>
+								</a>
+						</li>
+
+						<li><a href="#">
+									<i class="fa fa-meetup"></i>
+									<p>FORUMS</p>
+								</a>
+						</li>
+
+						<li><a href="#">
+									<i class="fa fa-question-circle"></i>
+									<p>HELP</p>
+								</a>
+						</li>
+					</ul>
+				</aside>
+				
+				<section id="RightSidebar">
+					<div id="upper">
+						<div id="expection">
+							<h1>HELPING YOU STAY IN TUNE</h1>
+							<h3>Fun &#38; easy online karaoke</h3>
+							<p>Sing karaoke online and get a score based on your performance. Practice your <br>
+							singing &#38; increase your score. Challenge your friends in becoming the next<br>karaoke champion. All you need is a microphone, built in or connected to your<br>computer</p>
 						</div>
-					</div>	
 						
-				</section>
-			</main>
+						<div id="register"> 
+							<h4>Why register?</h4>
+							<ul>
+								<li><i class="fa fa-check"></i><p>Keep track of your scores</p></li>
+								<li><i class="fa fa-check"></i><p>Challenge your friends</p></li>
+								<li><i class="fa fa-check"></i><p>Make song requests</p></li>
+								<li><i class="fa fa-check"></i><p>Upload a picture</p></li>
+								<li><i class="fa fa-check"></i><p>Make friends</p></li>
+							</ul>
+							<button class="btn btn-lg bg-blue">Register</button>
+							<!-- <button type="button" class="btn btn-primary">Register</button> -->
+						</div>
+					</div>					
 
+					<section id="lower">
+
+						<div id="HotPicks">
+							<div class="csstriangle-BL">
+								
+					  	</div>
+
+					  	<div class="csstriangle-TR">
+								
+					  	</div>
+
+							<div id="hot-picks">
+								<h4>Hot picks</h4>
+							</div>
+
+							<div class="pick">
+								<div class="thumbnail">
+									<img src="assets/img/banner/Miley3.png">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>Wrecking Ball</h6>
+									<h6>Miley Cyrus</h6>
+								</div>
+
+								<div class="useraction">
+									<div class="actionlogo">
+										<i class="fa fa-hand-o-right"></i>
+									</div>
+									
+									<div class="userchoice">
+										 <input type="button" class="button" value="SING IT">
+										 <input type="button" class="button" value="BATTLE">
+									</div>										
+								</div>								
+							</div>
+
+							<div class="pick">
+								<div class="thumbnail">
+									<img src="assets/img/banner/Katy1.png">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>Roar</h6>
+									<h6>Katy Perry</h6>
+								</div>
+
+								<div class="useraction">
+									<div class="actionlogo">
+										<i class="fa fa-hand-o-right"></i>
+									</div>
+									
+									<div class="userchoice">
+										 <input type="button" class="button" value="SING IT">
+										 <input type="button" class="button" value="BATTLE">
+									</div>										
+								</div>								
+							</div>
+						</div>
+
+						<div id="HighScores">
+							<div class="csstriangle-BL">
+								
+					  	</div>
+
+					  	<div class="csstriangle-TR">
+								
+					  	</div>
+							<div id="High-Scores">
+								<h4>High scores this week</h4>
+							</div>							
+
+							<div class="userscore firstuserscore">
+								<div class="ranking">
+									<p>1</p>
+								</div>
+
+								<div class="thumbnail thumbscore">
+									<img src="assets/img/banner/CaptainAmerica1.jpg">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>What is Lorem Ipsum</h6>
+									<h6>dummy text</h6>
+								</div>
+
+								<div class="score">
+								<p>98789</p>
+								</div>
+							</div>
+
+							<div class="userscore">
+								<div class="ranking">
+									<p>2</p>
+								</div>
+
+								<div class="thumbnail thumbscore">
+									<img src="assets/img/banner/CaptainAmerica1.jpg">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>What is Lorem Ipsum</h6>
+									<h6>dummy text</h6>
+								</div>
+
+								<div class="score">
+								<p>2000</p>
+								</div>
+							</div>
+
+							<div class="userscore">
+								<div class="ranking">
+									<p>3</p>
+								</div>
+
+								<div class="thumbnail thumbscore">
+									<img src="assets/img/banner/hulk1.jpg">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>What is Lorem Ipsum</h6>
+									<h6>dummy text</h6>
+								</div>
+
+								<div class="score">
+								<p>1000</p>
+								</div>
+							</div>
+
+							<div class="userscore">
+								<div class="ranking">
+									<p>4</p>
+								</div>
+
+								<div class="thumbnail thumbscore">
+									<img src="assets/img/banner/hulk1.jpg">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>What is Lorem Ipsum</h6>
+									<h6>dummy text</h6>
+								</div>
+
+								<div class="score">
+								<p>419</p>
+								</div>
+							</div>
+
+							<div class="userscore">
+								<div class="ranking">
+									<p>5</p>
+								</div>
+
+								<div class="thumbnail thumbscore">
+									<img src="assets/img/banner/CaptainAmerica1.jpg">
+								</div>
+
+								<div class="userinfo">
+									<h6><b>What is Lorem Ipsum</h6>
+									<h6>dummy text</h6>
+								</div>
+
+								<div class="score">
+								<p>200</p>
+								</div>
+							</div>
+
+						</div>
+
+					</section>
+				</section>				
+			</main>
 		</div>
 		
 
